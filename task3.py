@@ -8,3 +8,14 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
+x = float(input('Введите координату X: '))
+y = float(input('Введите координату Y: '))
+quarter = 1
+if x < 0 and y > 0:
+    quarter = 2
+elif x < 0 and y < 0:
+    quarter = 3
+elif x > 0 and y < 0:
+    quarter = 2
+
+print(f'точка лежит в {quarter} четверти')
